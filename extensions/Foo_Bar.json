@@ -1,14 +1,14 @@
 {
     "type": "magento2-module",
-    "module_name": "Yireo_EmailTester2",
-    "composer_name": "yireo/magento2-emailtester2",
-    "composer_version": "1.4.3",
+    "module_name": "Foo_Bar",
+    "composer_name": "foo/magento2-bar",
+    "composer_version": "1.0.0",
     "checks": {
         "graphql": false,
-        "test.unit": true,
-        "test.integration": true,
-        "test.mftf": true,
-        "coding-standard": {
+        "test_unit": true,
+        "test_integration": true,
+        "test_mftf": true,
+        "coding_standard": {
             "warnings_at_level": 9,
             "number_of_files": 72
         }
