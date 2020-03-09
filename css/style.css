@@ -1,0 +1,16 @@
+.extdn-extension-badge {
+    max-width:200px;
+    border: 1px solid black;
+}
+
+.extdn-extension-badge .image {
+    background-color: black;
+}
+
+.extdn-extension-badge .heading {
+    padding: 10px;
+}
+
+.extdn-extension-badge .content {
+    padding: 10px;
+}

@@ -4,9 +4,9 @@ Repository for generating ExtDN extension badges.
 ## Usage
 Simply add the following snippet to your own webpage, replacing `Foo_Bar` with the information that you want to show the badge for:
 ```html
-<div id="extdn_badge"></div>
+<div id="my-extdn-badge"></div>
 <script src="https://raw.githubusercontent.com/extdn/extdn-badge-repository/master/js/badge.js"></script>
-<script>document.getElementById('extdn_badge').innerHTML = getExtDNBadge('Foo_Bar');</script>
+<script>getExtDNBadge('Foo_Bar', function(badge) { document.getElementById('my-extdn-badge').innerHTML = badge; });</script>
 ```
 
 Please note that the extension `Foo_Bar` needs to exist in the `extensions/` folder of this repository.
