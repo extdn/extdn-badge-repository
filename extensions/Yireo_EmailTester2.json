@@ -1,0 +1,16 @@
+{
+    "type": "magento2-module",
+    "module_name":"Yireo_EmailTester2",
+    "composer_name":"yireo/magento2-emailtester2",
+    "checks": {
+        "magento_coding_standard": {
+            "warning_level": "6"
+        },
+        "graphql": "0",
+        "tests": {
+            "unit": "1",
+            "integration": "1",
+            "mftf": "1"
+        }
+    }
+}

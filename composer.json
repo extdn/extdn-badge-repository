@@ -1,0 +1,17 @@
+{
+  "name": "extdn/extdn-badge-repository",
+  "description": "ExtDN Badge Repository",
+  "type": "project",
+  "license": [
+    "OSL-3.0"
+  ],
+  "require": {
+    "ext/json": "*",
+    "ext-simplexml": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ExtDN\\": "lib/ExtDN/"
+    }
+  }
+}
