@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace ExtDN\Badge\Information;
 
+use ExtDN\Badge\Information\Check\CodingStandard;
 use ExtDN\Badge\Information\Check\GraphQL;
 use ExtDN\Badge\Information\Check\Test\Integration;
 use ExtDN\Badge\Information\Check\Test\Mftf;
@@ -59,7 +60,8 @@ class Generator
             new GraphQL,
             new Unit,
             new Integration,
-            new Mftf
+            new Mftf,
+            new CodingStandard
         ];
     }
 

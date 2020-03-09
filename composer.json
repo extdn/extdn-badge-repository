@@ -6,12 +6,25 @@
     "OSL-3.0"
   ],
   "require": {
-    "ext/json": "*",
-    "ext-simplexml": "*"
+    "ext-json": "*",
+    "ext-simplexml": "*",
+    "magento/magento-coding-standard": "^5.0"
   },
   "autoload": {
     "psr-4": {
-      "ExtDN\\": "lib/ExtDN/"
-    }
+      "ExtDN\\": "lib/ExtDN/",
+      "PHP_CodeSniffer\\": "vendor/squizlabs/php_codesniffer/src"
+    },
+    "files": [
+      "vendor/squizlabs/php_codesniffer/autoload.php"
+    ]
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "([ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/)"
+    ],
+    "post-update-cmd": [
+      "([ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/)"
+    ]
   }
 }
