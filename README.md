@@ -4,16 +4,23 @@ Repository for generating ExtDN extension badges.
 **Status: Beta (use at your own risk and do let us know if you are using this)**
 
 ## Usage
-Simply add the following snippet to your own webpage, replacing `Foo_Bar` with the information that you want to show the badge for:
+Add the following to your HTML header:
+```html
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/extdn/extdn-badge-repository/master/css/style.css">
+<script src="https://raw.githubusercontent.com/extdn/extdn-badge-repository/master/js/badge.js"></script>
+```
+
+Add the following snippet to your own webpage, replacing `Foo_Bar` with the information that you want to show the badge for:
 ```html
 <div id="my-extdn-badge"></div>
-<script src="https://raw.githubusercontent.com/extdn/extdn-badge-repository/master/js/badge.js"></script>
 <script>getExtDNBadge('Foo_Bar', function(badge) { document.getElementById('my-extdn-badge').innerHTML = badge; });</script>
 ```
 
 Please note that the extension `Foo_Bar` needs to exist in the `extensions/` folder of this repository. The end-result might appear a bit like the following:
 
 <img src="images/sample-badge.png" />
+
+The actual badge is generated via JS, which includes a logo (loaded in either WebP or PNG using a `picture` element) and dynamic information with extension details.
 
 ## Magento 2 checks
 The following checks are made on a Magento 2 extension:
@@ -56,3 +63,7 @@ This repository ships with various tools to generate badgets. First of all, the 
     php scripts/extdn_badge_information_generator.php /my/extension/folder
 
 The output will show JSON which can then be added to a new file in the `extensions/` folder.
+
+## Todo
+- Enhance styling of badge on webpage
+- Add minified CSS and JavaScript (and generate via Gulp script)
