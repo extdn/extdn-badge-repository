@@ -1,16 +1,44 @@
 .extdn-extension-badge {
-    max-width:200px;
+    max-width: 190px;
     border: 1px solid black;
+    border-radius: 5px;
+    font-family: "Oswald", Open Sans, Helvetica, sans-serif;
+    font-size: 90%;
 }
 
 .extdn-extension-badge .image {
     background-color: black;
 }
 
+.extdn-extension-badge .image img {
+    width: 100%;
+    max-width: 100%;
+}
+
 .extdn-extension-badge .heading {
     padding: 10px;
+    color: #307eae;
+}
+
+.extdn-extension-badge .heading h3 {
+    font-size: 150%;
+    color: black;
+}
+
+.extdn-extension-badge .heading h3,
+.extdn-extension-badge .heading h4 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
 }
 
 .extdn-extension-badge .content {
     padding: 10px;
+    font-size: 90%;
+    color: #307eae;
+}
+
+.extdn-extension-badge .content {
+
 }
