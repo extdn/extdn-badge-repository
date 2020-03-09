@@ -1,37 +1,47 @@
 # ExtDN Badge Repository
 Repository for generating ExtDN extension badges.
 
+## Usage
+Simply add the following snippet to your own webpage, replacing `Foo_Bar` with the information that you want to show the badge for:
+```html
+<div id="extdn_badge"></div>
+<script src="https://raw.githubusercontent.com/extdn/extdn-badge-repository/master/js/badge.js"></script>
+<script>document.getElementById('extdn_badge').innerHTML = getExtDNBadge('Foo_Bar');</script>
+```
+
+Please note that the extension `Foo_Bar` needs to exist in the `extensions/` folder of this repository.
+
 ## Magento 2 checks
 The following checks are made on a Magento 2 extension:
 
-### Composer support
+#### Composer support
 An extension needs to include a `composer.json` file. There is no check for this, because it is a bare minimum, not a base for a badge.
 
-### Magento Coding Standard
+#### Magento Coding Standard
 An extension needs to comply to the Magento Coding Standard.
 
 @todo: Generate this information.
 
-### GraphQL endpoints
+#### GraphQL endpoints
 An extension is able to offer GraphQL endpoints. The following checks are in place for this:
 
 - See whether a file `etc/schema.graphqls` exists.
 
-### Unit tests
+#### Unit tests
 An extension is able to offer unit tests. The following checks are in place for this:
 
 - See whether a folder `Test/Unit` exists.
 
 @todo: Add additional tests when tests are located elsewhere.
 
-### Integration tests
+#### Integration tests
 An extension is able to offer integration tests. The following checks are in place for this:
 
 - See whether a folder `Test/Integration` exists.
 
 @todo: Add additional tests when tests are located elsewhere.
 
-### MFTF tests
+#### MFTF tests
 An extension is able to offer MFTF tests. The following checks are in place for this:
 
 - See whether a folder `Test/Mftf` exists.
