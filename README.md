@@ -18,9 +18,7 @@ The following checks are made on a Magento 2 extension:
 An extension needs to include a `composer.json` file. There is no check for this, because it is a bare minimum, not a base for a badge.
 
 #### Magento Coding Standard
-An extension needs to comply to the Magento Coding Standard.
-
-@todo: Generate this information.
+An extension needs to comply to the Magento Coding Standard. There is a check that runs all PHP CodeSniffer rules. Next, a number `warnings_at_level` is reported. If for instance, this number is 10, this means that this extension would not be accepted on the Magento Marketplace. A number like 7 to 9 is usually fine. There are little extensions with a `warnings_at_level` lower than 3.
 
 #### GraphQL endpoints
 An extension is able to offer GraphQL endpoints. The following checks are in place for this:
