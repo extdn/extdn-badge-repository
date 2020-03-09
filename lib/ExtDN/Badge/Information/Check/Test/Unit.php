@@ -17,7 +17,7 @@ class Unit extends CheckAbstract
      */
     public function getCode(): string
     {
-        return 'test.unit';
+        return 'test_unit';
     }
 
     /**

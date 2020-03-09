@@ -17,7 +17,7 @@ class Integration extends CheckAbstract
      */
     public function getCode(): string
     {
-        return 'test.integration';
+        return 'test_integration';
     }
 
     /**

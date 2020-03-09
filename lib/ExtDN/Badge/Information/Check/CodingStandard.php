@@ -19,7 +19,7 @@ class CodingStandard extends CheckAbstract
      */
     public function getCode(): string
     {
-        return 'coding-standard';
+        return 'coding_standard';
     }
 
     /**

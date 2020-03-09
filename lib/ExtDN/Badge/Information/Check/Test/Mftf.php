@@ -17,7 +17,7 @@ class Mftf extends CheckAbstract
      */
     public function getCode(): string
     {
-        return 'test.mftf';
+        return 'test_mftf';
     }
 
     /**
