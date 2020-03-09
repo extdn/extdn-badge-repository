@@ -1,6 +1,8 @@
 # ExtDN Badge Repository
 Repository for generating ExtDN extension badges.
 
+**Status: Beta (use at your own risk and do let us know if you are using this)**
+
 ## Usage
 Simply add the following snippet to your own webpage, replacing `Foo_Bar` with the information that you want to show the badge for:
 ```html
@@ -9,7 +11,9 @@ Simply add the following snippet to your own webpage, replacing `Foo_Bar` with t
 <script>getExtDNBadge('Foo_Bar', function(badge) { document.getElementById('my-extdn-badge').innerHTML = badge; });</script>
 ```
 
-Please note that the extension `Foo_Bar` needs to exist in the `extensions/` folder of this repository.
+Please note that the extension `Foo_Bar` needs to exist in the `extensions/` folder of this repository. The end-result might appear a bit like the following:
+
+<img src="images/sample-badge.png" />
 
 ## Magento 2 checks
 The following checks are made on a Magento 2 extension:
