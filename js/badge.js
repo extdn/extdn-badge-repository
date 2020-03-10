@@ -43,10 +43,21 @@ var getExtDNBadge = function (extensionId, badgeCallback) {
                 printLine('GraphQL endpoint', getYesOrNo(badgeInformation.checks.graphql_endpoint));
             }
 
-            printLine('Unit tests', getYesOrNo(badgeInformation.checks.test_unit));
-            printLine('Integration tests', getYesOrNo(badgeInformation.checks.test_integration));
-            printLine('MFTF tests', getYesOrNo(badgeInformation.checks.test_mftf));
-            printLine('Number of files', badgeInformation.checks.coding_standard.number_of_files);
+            if (badgeInformation.checks.test_unit) {
+                printLine('Unit tests', getYesOrNo(badgeInformation.checks.test_unit));
+            }
+
+            if (badgeInformation.checks.test_integration) {
+                printLine('Integration tests', getYesOrNo(badgeInformation.checks.test_integration));
+            }
+
+            if (badgeInformation.checks.test_mftf) {
+                printLine('MFTF tests', getYesOrNo(badgeInformation.checks.test_mftf));
+            }
+
+            if (badgeInformation.checks.coding_standard.number_of_files) {
+                printLine('Number of files', badgeInformation.checks.coding_standard.number_of_files);
+            }
 
             return html;
         }
