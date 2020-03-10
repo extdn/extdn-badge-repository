@@ -13,7 +13,7 @@ var getExtDNBadge = function (extensionId, badgeCallback) {
         badgeCallback(badgeHtml);
 
         function getYesOrNo(value) {
-            return (value === true ? '<span class="yes">Yes</span>' : '<span class="no">No</span>');
+            return (value === true ? '<span class="yes" title="' + value + '">Yes</span>' : '<span class="no" title="' + value + '">No</span>');
         }
 
         function getPictureSet(badgeInformation) {
@@ -35,13 +35,8 @@ var getExtDNBadge = function (extensionId, badgeCallback) {
             printLine('', '<div class="stars">Rating ' + badgeInformation.checks.coding_standard.stars + '</div>', 'A simple rating calculated from the PHPCS warning level');
             printLine('Composer', badgeInformation.composer_name, 'The composer key of this extension package');
 
-            printLine('GraphQL endpoint', getYesOrNo(badgeInformation.checks.graphql_endpoint));
             printLine('Marketplace compliant', getYesOrNo(badgeInformation.checks.coding_standard.warnings_at_level < 10), 'Quick check to see if this extension is compliant to Magento Marketplace coding rules');
             printLine('PHPCS Warning Level', badgeInformation.checks.coding_standard.warnings_at_level, 'The level at which there are warnings from the Magento Coding Standard. Level 10 means that the extension is not accepted on the Magento Marketplace.');
-
-            if (badgeInformation.checks.graphql_endpoint > 0) {
-                printLine('GraphQL endpoint', getYesOrNo(badgeInformation.checks.graphql_endpoint));
-            }
 
             if (badgeInformation.checks.test_unit) {
                 printLine('Unit tests', getYesOrNo(badgeInformation.checks.test_unit));
@@ -53,6 +48,10 @@ var getExtDNBadge = function (extensionId, badgeCallback) {
 
             if (badgeInformation.checks.test_mftf) {
                 printLine('MFTF tests', getYesOrNo(badgeInformation.checks.test_mftf));
+            }
+
+            if (badgeInformation.checks.graphql) {
+                printLine('GraphQL endpoint', getYesOrNo(badgeInformation.checks.graphql));
             }
 
             if (badgeInformation.checks.coding_standard.number_of_files) {
