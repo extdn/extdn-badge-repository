@@ -2,15 +2,37 @@
     "type": "magento2-module",
     "module_name": "Foo_Bar",
     "composer_name": "foo/magento2-bar",
-    "composer_version": "1.0.0",
+    "composer_version": "0.0.1",
     "checks": {
         "graphql": false,
         "test_unit": true,
         "test_integration": true,
-        "test_mftf": true,
+        "test_mftf": false,
         "coding_standard": {
-            "warnings_at_level": 9,
-            "number_of_files": 72
+            "stars": 0,
+            "warnings_at_level": 10,
+            "warning_level_details": {
+                "5": {
+                    "Magento2.Commenting.ClassAndInterfacePHPDocFormatting.ForbiddenTags": 21,
+                    "Magento2.Commenting.ClassAndInterfacePHPDocFormatting.InvalidDescription": 19
+                },
+                "8": {
+                    "Magento2.Functions.DiscouragedFunction.Discouraged": 8
+                },
+                "10": {
+                    "Magento2.PHP.ReturnValueCheck.ImproperValueTesting": 1,
+                    "PSR1.Classes.ClassDeclaration.MissingNamespace": 1
+                },
+                "6": {
+                    "Generic.Files.LineLength.TooLong": 4,
+                    "Squiz.ControlStructures.ControlSignature.SpaceAfterCloseParenthesis": 5,
+                    "Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword": 1
+                },
+                "9": {
+                    "Magento2.Security.XssTemplate.FoundUnescaped": 8
+                }
+            },
+            "number_of_files": 32
         }
     }
 }
