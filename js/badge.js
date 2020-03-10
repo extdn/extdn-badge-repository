@@ -14,7 +14,7 @@ var getExtDNBadge = function (extensionId, badgeCallback) {
             + '</picture>'
             + '</div>'
             + '<div class="heading">'
-            + '<h4>Tested by ExtDN</h4>'
+            + '<h4>ExtDN verified</h4>'
             + '<h3>' + badgeInformation.module_name + '</h3>'
             + '</div>'
             + '<div class="content">'
