@@ -61,3 +61,7 @@ The output will show JSON which can then be added to a new file in the `extensio
 ## Todo
 - Enhance styling of badge on webpage
 - Add minified CSS and JavaScript (and generate via Gulp script)
+- Integrate PHPStan with the following command:
+    - `vendor/bin/phpstan analyse --level 8 --autoload-file=$MAGENTO/vendor/autoload.php -c phpstan.neon $MODULE_SOURCE` 
+
+End
