@@ -1,0 +1,18 @@
+{
+    "type": "magento2-module",
+    "module_name": "Shkoliar_GridColors",
+    "composer_name": "shkoliar/magento-grid-colors",
+    "composer_version": "1.0.2",
+    "checks": {
+        "graphql": false,
+        "test_unit": false,
+        "test_integration": false,
+        "test_mftf": false,
+        "coding_standard": {
+            "stars": 5,
+            "warnings_at_level": 0,
+            "warning_level_details": [],
+            "number_of_files": 1
+        }
+    }
+}
