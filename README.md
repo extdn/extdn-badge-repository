@@ -58,6 +58,8 @@ This repository ships with various tools to generate badgets. First of all, the 
 
 The output will show JSON which can then be added to a new file in the `extensions/` folder.
 
+Do not forget to add a `information_url` and a `repository_url` in your JSON file. THe `repository_url` information is mandatory for all non-ExtDN members.
+
 ## Todo
 - Enhance styling of badge on webpage
 - Add minified CSS and JavaScript (and generate via Gulp script)
