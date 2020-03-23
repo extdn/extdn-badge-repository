@@ -3,6 +3,8 @@
     "module_name": "Foo_Bar",
     "composer_name": "foo/magento2-bar",
     "composer_version": "0.0.1",
+    "url": "http://example.org/foo/bar",
+    "git_repository_url": "https://github.com/foo/bar",
     "checks": {
         "graphql": false,
         "test_unit": true,
