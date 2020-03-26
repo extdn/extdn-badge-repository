@@ -1,5 +1,5 @@
 # ExtDN Badge Repository
-Repository for generating ExtDN extension badges.
+Repository for generating ExtDN extension badges for ExtDN badges.
 
 **Status: Beta (use at your own risk and do let us know if you are using this)**
 
@@ -58,10 +58,25 @@ This repository ships with various tools to generate badgets. First of all, the 
 
 The output will show JSON which can then be added to a new file in the `extensions/` folder.
 
+Do not forget to add a `information_url` and a `repository_url` in your JSON file. THe `repository_url` information is mandatory for all non-ExtDN members.
+
 ## Todo
 - Enhance styling of badge on webpage
 - Add minified CSS and JavaScript (and generate via Gulp script)
 - Integrate PHPStan with the following command:
     - `vendor/bin/phpstan analyse --level 8 --autoload-file=$MAGENTO/vendor/autoload.php -c phpstan.neon $MODULE_SOURCE` 
 
-End
+## Frequently Asked Questions
+### Can I just submit my own extension?
+As of yet, we do not intend to use this repository for any extension, but we limit this to only those
+extensions offered by ExtDN members. The reason for this is that ExtDN is able to trust ExtDN members for
+submitting correct extension information.
+
+However, you are welcome to submit your extension. But please note that we will require valid URLs in the JSON
+entry (see below).
+
+### How do I submit new extension entries?
+Fork this repo under your own GitHub account, check it out locally, copy the example file in the `extensions/` folder and modify it as needed. Next, commit it to your fork and create a Pull Request towards this extension. In short, just send in your PR. 
+
+Do not forget to add a `information_url` and a `repository_url` in your JSON file. THe `repository_url` information is mandatory for all non-ExtDN members.
+
