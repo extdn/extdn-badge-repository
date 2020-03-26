@@ -3,6 +3,8 @@
     "module_name": "Shkoliar_GridColors",
     "composer_name": "shkoliar/magento-grid-colors",
     "composer_version": "1.0.2",
+    "information_url": "https://github.com/shkoliar/magento-grid-colors",
+    "repository_url": "https://github.com/shkoliar/magento-grid-colors",
     "checks": {
         "graphql": false,
         "test_unit": false,
